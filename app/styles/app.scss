@@ -40,6 +40,7 @@ body {
     z-index: 30;
     position: relative;
     padding: 13px 30px;
+    display: none;
   }
 
   .logo {
@@ -75,6 +76,7 @@ body {
     span {
       width: 30px;
       display: block;
+      font-size: 0;
     }
 
     b {
@@ -83,6 +85,23 @@ body {
       width: inherit;
       display: block;
       margin: 4px 0;
+      transition: all .3s; 
+    }
+
+    &.on b {
+      &:nth-child(1) {
+        transform: rotate(45deg);
+        margin-bottom: -6px;
+      }
+
+      &:nth-child(2) {
+        opacity: 0;
+      }
+
+      &:nth-child(3) {
+        margin-top: -6px;
+        transform: rotate(-45deg);
+      }
     }
   }
 }
