@@ -1,20 +1,33 @@
-{{outlet}}
+<section id="menu">
+  <aside class="high">
+    <nav>
+      <a href="/" class="on">Start</a>
+      <a href="/">Produkte</a>
+      <a href="/">Unternehmen</a>
+    </nav>
 
+    <nav>
+      <a href="/">Partner</a>
+      <a href="/">Service</a>
+      <a href="/">Kontakt</a>
+    </nav>
+  </aside>
 
-<aside id="menu">
-  <a href="/" class="logo">
-    {{inline-svg "logo.svg"}}
-  </a>
+  <aside class="low">
+    <a href="/" class="logo">
+      {{inline-svg "logo.svg"}}
+    </a>
 
-  <nav class="left">
-    <a href="/" class="on">Start</a>
-    <a href="/">Produkte</a>
-    <a href="/">Unternehmen</a>
-  </nav>
+    <a href="#" class="toggle">
+      <span>
+        <b></b>
+        <b></b>
+        <b></b>
+      </span>
+    </a>
+  </aside>
+</section>
 
-  <nav class="left">
-    <a href="/">Partner</a>
-    <a href="/">Service</a>
-    <a href="/">Kontakt</a>
-  </nav>
-</aside>
+<section id="content">
+  {{outlet}}
+</section>
