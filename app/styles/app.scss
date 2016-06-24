@@ -1,6 +1,7 @@
 body {
   background: #463535;
   margin: 0;
+  font-family: 'Roboto', sans-serif;
 }
 
 #menu {
@@ -11,12 +12,34 @@ body {
   top: 0;
   left: 0;
 
+  nav {
+    a {
+      font-weight: 500;
+      font-size: 17px;
+      color: #D3D3D3;
+      text-decoration: none;
+      text-transform: uppercase;
+      display: block;
+      margin: 17px 0;
+
+      &.on {
+        color: #505050;
+        border-left: 3px solid #505050;
+        padding-left: 10px;
+      }
+    }
+  }
+
   .low {
     height: 68px;
+    position: relative;
   }
 
   .high {
-    display: none;
+    background: #fff;
+    z-index: 30;
+    position: relative;
+    padding: 13px 30px;
   }
 
   .logo {
