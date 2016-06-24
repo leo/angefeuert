@@ -1,5 +1,5 @@
 body {
-  background: #463535;
+  background: #fff;
   margin: 0;
   font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -12,6 +12,19 @@ body {
   width: 100%;
   top: 0;
   left: 0;
+
+  &:after {
+    content: '';
+    display: block;
+    width: 153px;
+    height: 153px;
+    border-radius: 100%;
+    position: absolute;
+    top: -50px;
+    left: 5px;
+    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.07);
+    z-index: 1;
+  }
 
   nav {
     a {
@@ -34,6 +47,9 @@ body {
   .low {
     height: 68px;
     position: relative;
+    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.07);
+    z-index: 2;
+    background: #fff;
   }
 
   .high {
