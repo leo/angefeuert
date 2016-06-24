@@ -2,6 +2,7 @@ body {
   background: #463535;
   margin: 0;
   font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 
 #menu {
@@ -84,14 +85,14 @@ body {
       height: 2px;
       width: inherit;
       display: block;
-      margin: 4px 0;
-      transition: all .3s; 
+      margin: 6px 0;
+      transition: all .3s;
     }
 
     &.on b {
       &:nth-child(1) {
         transform: rotate(45deg);
-        margin-bottom: -6px;
+        margin-bottom: -8px;
       }
 
       &:nth-child(2) {
@@ -99,7 +100,7 @@ body {
       }
 
       &:nth-child(3) {
-        margin-top: -6px;
+        margin-top: -8px;
         transform: rotate(-45deg);
       }
     }
