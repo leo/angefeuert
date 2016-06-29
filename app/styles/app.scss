@@ -126,4 +126,39 @@ body {
 
 #content {
   min-height: 100vh;
+
+  .slick-slider {
+    height: 100vh;
+    margin-bottom: 0;
+  }
+
+  .slick-dots {
+    position: fixed;
+    bottom: auto;
+    left: 10px;
+  }
+
+  .copyright {
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    color: #737373;
+    text-decoration: none;
+    font-size: 13px;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.68);
+    padding: 6px 15px;
+    font-family: 'Droid Serif', serif;
+
+    b {
+      color: #C63030;
+      font-weight: normal;
+    }
+  }
+
+  .slick-track img {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+  }
 }
