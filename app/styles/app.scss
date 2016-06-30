@@ -135,16 +135,42 @@ body {
 
 #content {
   height: 100%;
+  z-index: 200;
 
   .slick-slider {
     height: 100%;
     margin-bottom: 0;
+    position: relative;
   }
 
   .slick-dots {
     position: fixed;
     bottom: auto;
-    left: 10px;
+    display: flex;
+    right: 0;
+    width: 45px;
+    height: 100%;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    li {
+      display: block;
+      background: #fff;
+      border-radius: 100%;
+      height: 14px;
+      width: 14px;
+      margin: 5px 0;
+
+      &.slick-active {
+        background: #C63030;
+      }
+
+      button {
+        display: none;
+      }
+    }
   }
 
   .copyright {
