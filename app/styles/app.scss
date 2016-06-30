@@ -1,9 +1,17 @@
+html, body {
+  height: 100%;
+}
+
 body {
   background: #463535 url(../images/noise.png) repeat;
   background-size: 100px;
   margin: 0;
   font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
+}
+
+.ember-view {
+  height: 100%;
 }
 
 #menu {
@@ -125,10 +133,10 @@ body {
 }
 
 #content {
-  min-height: 100vh;
+  height: 100%;
 
   .slick-slider {
-    height: 100vh;
+    height: 100%;
     margin-bottom: 0;
   }
 
@@ -156,9 +164,13 @@ body {
     }
   }
 
+  .slick-track, .slick-list, .slick-slide {
+    height: 100%;
+  }
+
   .slick-track img {
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     object-fit: cover;
   }
 }
