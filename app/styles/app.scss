@@ -166,24 +166,9 @@ body {
     }
   }
 
-  .image {
-    position: relative;
-
-    &:after {
-      content: '';
-      display: block;
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background-image: linear-gradient(180deg, rgba(0,0,0,0.00) 45%, #463535 72%);
-    }
-
-    img {
-      width: 100%;
-      height: auto;
-    }
+  .image img {
+    width: 100%;
+    height: auto;
   }
 
   .details {
@@ -216,6 +201,19 @@ body {
       line-height: 23px;
       margin: 30px 0;
     }
+  }
+
+  .contact-us {
+    background: rgba(0, 0, 0, 0.16);
+    margin-top: 70px;
+    color: #C0C0C0;
+    text-transform: uppercase;
+    letter-spacing: 0.36;
+    font-size: 15px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    padding: 20px 0;
   }
 
   .slick-slider {
