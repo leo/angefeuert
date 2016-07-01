@@ -48,6 +48,7 @@ body {
       text-transform: uppercase;
       display: block;
       margin: 17px 0;
+      transition: all 0.3s;
 
       &.active {
         color: #505050;
