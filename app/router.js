@@ -9,6 +9,9 @@ Router.map(function() {
   this.route('products', {
     path: '/produkte'
   });
+  this.route('company', {
+    path: '/unternehmen'
+  });
 });
 
 export default Router;
