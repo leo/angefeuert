@@ -13,6 +13,9 @@ Router.map(function() {
     path: '/unternehmen'
   });
   this.route('service');
+  this.route('contact', {
+    path: '/kontakt'
+  });
 });
 
 export default Router;
