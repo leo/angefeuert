@@ -12,6 +12,7 @@ Router.map(function() {
   this.route('company', {
     path: '/unternehmen'
   });
+  this.route('service');
 });
 
 export default Router;
