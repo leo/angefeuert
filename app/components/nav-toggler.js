@@ -1,4 +1,5 @@
 import Ember from 'ember';
+const { $ } = Ember;
 
 export default Ember.Component.extend({
   tagName: 'a',
@@ -6,7 +7,7 @@ export default Ember.Component.extend({
   attributeBindings: ['href'],
   href: '#',
   click (event) {
-    const button = Ember.$(event.target).closest('.toggle');
+    const button = $(event.target).closest('.toggle');
 
     button.closest('.low').prev().slideToggle(300);
     button.toggleClass('on');
