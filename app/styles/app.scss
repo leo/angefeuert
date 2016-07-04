@@ -242,20 +242,25 @@ body {
   }
 
   .logo-big {
-    height: 500px;
-    width: 500px;
-    border-radius: 100%;
-    background: #fff;
-    position: absolute;
-    top: -250px;
-    left: -250px;
+    display: none;
 
-    svg {
-      width: 122px;
-      height: 102px;
+    @media (min-width: 992px) {
+      height: 500px;
+      width: 500px;
+      border-radius: 100%;
+      background: #fff;
       position: absolute;
-      right: 90px;
-      bottom: 95px;
+      top: -250px;
+      left: -250px;
+      display: block;
+
+      svg {
+        width: 122px;
+        height: 102px;
+        position: absolute;
+        right: 90px;
+        bottom: 95px;
+      }
     }
   }
 
