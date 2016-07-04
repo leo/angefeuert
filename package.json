@@ -1,7 +1,7 @@
 {
   "name": "angefeuert",
   "version": "0.0.0",
-  "description": "Small description for angefeuert goes here",
+  "description": "Where you buy a fireplace for your home",
   "private": true,
   "directories": {
     "doc": "doc",
