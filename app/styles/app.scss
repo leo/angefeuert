@@ -201,12 +201,14 @@ body {
     .low {
       box-shadow: none;
       background: none;
-      height: inherit;
+      height: 118px;
       position: absolute;
-      top: 0;
+      top: -28px;
       left: 0;
       right: 0;
-      text-align: center;
+      margin: 0 auto;
+      width: 153px;
+      z-index: 200;
 
       .toggle {
         display: none;
@@ -217,8 +219,8 @@ body {
         position: relative;
         top: auto;
         left: auto;
-        margin-top: -28px;
         padding-top: 23px;
+        cursor: pointer;
 
         svg {
           width: 42px;
