@@ -269,6 +269,11 @@ body {
       button {
         display: none;
       }
+
+      @media (min-width: 768px) {
+        height: 20px;
+        width: 20px;
+      }
     }
   }
 
@@ -287,6 +292,12 @@ body {
     b {
       color: #C63030;
       font-weight: normal;
+    }
+
+    @media (min-width: 768px) {
+      font-size: 15px;
+      right: 25px;
+      bottom: 25px;
     }
   }
 
