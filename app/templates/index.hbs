@@ -1,14 +1,32 @@
 {{#slick-slider autoplay=true autoplaySpeed=5000 speed=2000 arrows=false dots=true fade=true}}
   <div class="box">
-    <img src="/images/slide-one.png">
+    <picture>
+      <source srcset="images/slide-one-md.png 1x, images/slide-one-md@2x.png 2x" media="(min-width: 992px)">
+      <source srcset="images/slide-one-sm.png 1x, images/slide-one-sm@2x.png 2x" media="(min-width: 768px)">
+      <source srcset="images/slide-one@2x.png">
+
+      <img src="images/slide-three.png">
+    </picture>
   </div>
 
   <div class="box">
-    <img src="/images/slide-two.png">
+    <picture>
+      <source srcset="images/slide-two-md.png" media="(min-width: 992px)">
+      <source srcset="images/slide-two-sm.png" media="(min-width: 768px)">
+      <source srcset="images/slide-two.png">
+
+      <img src="images/slide-two.png">
+    </picture>
   </div>
 
   <div class="box">
-    <img src="/images/slide-three.png">
+    <picture>
+      <source srcset="images/slide-three-md.png" media="(min-width: 992px)">
+      <source srcset="images/slide-three-sm.png" media="(min-width: 768px)">
+      <source srcset="images/slide-three.png">
+
+      <img src="images/slide-three.png">
+    </picture>
   </div>
 {{/slick-slider}}
 
