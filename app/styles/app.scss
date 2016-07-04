@@ -138,7 +138,7 @@ body {
 
   @media (min-width: 922px) {
     height: 90px;
-    background: rgba(255, 255, 255, 0.90);
+    background: #fff;
     top: auto;
     bottom: 0;
 
@@ -149,10 +149,18 @@ body {
     nav {
       &:first-child {
         text-align: right;
+
+        a:first-child {
+          margin-left: 0;
+        }
       }
 
       &:last-child {
         text-align: left;
+
+        a:last-child {
+          margin-right: 0;
+        }
       }
 
       a {
@@ -193,10 +201,24 @@ body {
     .low {
       box-shadow: none;
       background: none;
-      display: none;
+      height: inherit;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      text-align: center;
 
       .toggle {
         display: none;
+      }
+
+      .logo {
+        display: inline-block;
+        position: relative;
+        top: auto;
+        left: auto;
+        margin-top: -28px;
+        padding-top: 33px;
       }
     }
   }
