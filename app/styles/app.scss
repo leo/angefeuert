@@ -243,17 +243,17 @@ body {
     height: 500px;
     width: 500px;
     border-radius: 100%;
-    background: #fff;
+    background: rgba(255, 255, 255, 0.90);
     position: absolute;
     top: -250px;
     left: -250px;
 
     svg {
-      width: 115px;
+      width: 122px;
       height: 102px;
       position: absolute;
-      right: 94px;
-      bottom: 100px;
+      right: 90px;
+      bottom: 95px;
     }
   }
 
