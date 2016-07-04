@@ -9,8 +9,8 @@ Router.map(function() {
   this.route('products', {
     path: '/produkte'
   });
-  this.route('company', {
-    path: '/unternehmen'
+  this.route('about', {
+    path: '/über-uns'
   });
   this.route('service');
   this.route('contact', {
