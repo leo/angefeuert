@@ -434,8 +434,12 @@ body {
     }
   }
 
-  .slick-track, .slick-list, .slick-slide {
+  .slick-track, .slick-slide {
     height: 100%;
+  }
+
+  .slick-list {
+    height: 100% !important;
   }
 
   .slick-track img {
