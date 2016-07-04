@@ -357,6 +357,10 @@ body {
     height: 100%;
     margin-bottom: 0;
     position: relative;
+
+    @media (min-width: 992px) {
+      padding-bottom: 90px;
+    }
   }
 
   .slick-dots {
