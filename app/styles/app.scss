@@ -135,6 +135,71 @@ body {
       }
     }
   }
+
+  @media (min-width: 922px) {
+    height: 90px;
+    background: rgba(255, 255, 255, 0.90);
+    top: auto;
+    bottom: 0;
+
+    &:after {
+      display: none;
+    }
+
+    nav {
+      &:first-child {
+        text-align: right;
+      }
+
+      &:last-child {
+        text-align: left;
+      }
+
+      a {
+        color: #737373;
+        display: inline-block;
+        margin: 0 10px;
+        letter-spacing: 0.28px;
+
+        &:hover {
+          color: black;
+        }
+
+        &.active {
+          border-left: 0;
+          border-bottom: 1px solid #A7A7A7;
+          padding-left: 0;
+          color: #737373;
+
+          &:hover {
+            color: black;
+            border-color: black;
+          }
+        }
+      }
+    }
+
+    .high {
+      display: flex !important;
+      background: none;
+      height: inherit;
+      padding: 0;
+      width: 730px;
+      margin: 0 auto;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .low {
+      box-shadow: none;
+      background: none;
+      display: none;
+
+      .toggle {
+        display: none;
+      }
+    }
+  }
 }
 
 #content {
