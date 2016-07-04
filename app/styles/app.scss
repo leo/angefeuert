@@ -239,6 +239,24 @@ body {
     padding-top: 0;
   }
 
+  .logo-big {
+    height: 500px;
+    width: 500px;
+    border-radius: 100%;
+    background: #fff;
+    position: absolute;
+    top: -250px;
+    left: -250px;
+
+    svg {
+      width: 115px;
+      height: 102px;
+      position: absolute;
+      right: 94px;
+      bottom: 100px;
+    }
+  }
+
   .title {
     text-align: center;
     margin-top: 45px;
