@@ -16,7 +16,9 @@ Router.map(function() {
   this.route('contact', {
     path: '/kontakt'
   });
-  this.route('partners');
+  this.route('partners', {
+    path: '/partner'
+  });
 });
 
 export default Router;
