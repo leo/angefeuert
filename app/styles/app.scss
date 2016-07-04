@@ -396,6 +396,17 @@ body {
       right: 25px;
       bottom: 25px;
     }
+
+    @media (min-width: 992px) {
+      bottom: 110px;
+      font-size: 13px;
+      transition: background .4s;
+      right: 20px;
+
+      &:hover {
+        background: #fff;
+      }
+    }
   }
 
   .slick-track, .slick-list, .slick-slide {
