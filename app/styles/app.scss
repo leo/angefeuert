@@ -168,6 +168,9 @@ body {
         display: inline-block;
         margin: 0 10px;
         letter-spacing: 0.28px;
+        transition: none;
+        padding: 2px 0;
+        box-sizing: border-box;
 
         &:hover {
           color: black;
