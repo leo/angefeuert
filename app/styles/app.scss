@@ -346,6 +346,20 @@ body {
       line-height: 23px;
       margin: 30px 0;
     }
+
+    @media (min-width: 768px) {
+      h1 {
+        font-size: 38px;
+
+        &:after {
+          margin-right: -200px;
+        }
+      }
+
+      p {
+        font-size: 16px;
+      }
+    }
   }
 
   .contact-us {
@@ -359,6 +373,11 @@ body {
     display: block;
     text-align: center;
     padding: 20px 0;
+
+    @media (min-width: 768px) {
+      padding: 40px 0;
+      font-size: 18px;
+    }
   }
 
   .slick-slider {
