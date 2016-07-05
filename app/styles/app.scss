@@ -542,4 +542,45 @@ body {
       }
     }
   }
+
+  .inner {
+    padding: 0 25px;
+
+    h2 {
+      font-family: 'Droid Serif', serif;
+    }
+
+    .address {
+      h2 {
+        display: none;
+      }
+
+      table {
+        table-layout: fixed;
+        width: 100%;
+
+        td {
+          display: block;
+          font-size: 15px;
+          letter-spacing: 0.36px;
+          line-height: 23px;
+
+          &:first-child {
+            font-weight: bold;
+            font-family: 'Droid Serif', serif;
+            font-size: 18px;
+
+            &:after {
+              content: ':';
+              display: inline;
+            }
+          }
+
+          &:last-child {
+            padding-bottom: 30px;
+          }
+        }
+      }
+    }
+  }
 }
