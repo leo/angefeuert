@@ -326,6 +326,16 @@ body {
 
     @media (min-width: 992px) {
       margin-top: 0;
+
+      h1 {
+        font-size: 40px;
+        margin-top: 0;
+        margin-bottom: 0;
+
+        &:after {
+          margin: 8px -70px 0;
+        }
+      }
     }
   }
 
@@ -685,6 +695,18 @@ body {
       width: 970px;
       padding: 0;
       display: flex;
+      height: calc(100vh - 365px);
+      padding-top: 50px;
+      box-sizing: border-box;
+
+      aside {
+        height: 100%;
+
+        h2 {
+          margin: 0 0 30px 0;
+          box-sizing: border-box;
+        }
+      }
 
       .map {
         order: 1;
@@ -694,6 +716,11 @@ body {
 
         .google-map {
           width: 430px;
+          height: calc(100% - 58px);
+
+          iframe {
+            height: 100%;
+          }
         }
       }
 
@@ -706,5 +733,10 @@ body {
         }
       }
     }
+  }
+
+  @media (min-width: 992px) {
+    padding-top: 90px;
+    box-sizing: border-box;
   }
 }
