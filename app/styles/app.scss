@@ -314,6 +314,10 @@ body {
       width: 100%;
       height: auto;
     }
+
+    @media (min-width: 768px) {
+      background-image: linear-gradient(to top, #463535 10%, transparent 80%);
+    }
   }
 
   .details {
@@ -355,10 +359,6 @@ body {
           margin-right: -200px;
         }
       }
-
-      p {
-        font-size: 16px;
-      }
     }
   }
 
@@ -376,7 +376,7 @@ body {
 
     @media (min-width: 768px) {
       padding: 40px 0;
-      font-size: 18px;
+      font-size: 17px;
     }
   }
 
