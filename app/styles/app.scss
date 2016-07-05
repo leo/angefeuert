@@ -323,6 +323,10 @@ body {
         font-size: 35px;
       }
     }
+
+    @media (min-width: 992px) {
+      margin-top: 0;
+    }
   }
 
   .image {
@@ -664,11 +668,43 @@ body {
           margin: 100px auto;
         }
       }
+
+      @media (min-width: 992px) {
+        &:after {
+          display: none;
+        }
+      }
     }
 
     @media (min-width: 768px) {
       width: 700px;
       margin: 0 auto;
+    }
+
+    @media (min-width: 992px) {
+      width: 970px;
+      padding: 0;
+      display: flex;
+
+      .map {
+        order: 1;
+        position: relative;
+        padding-right: 50px;
+        border-right: 1px solid rgba(255, 255, 255, 0.16);
+
+        .google-map {
+          width: 430px;
+        }
+      }
+
+      .address {
+        order: 2;
+        padding-left: 50px;
+
+        h2 {
+          display: block;
+        }
+      }
     }
   }
 }
