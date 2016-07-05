@@ -263,6 +263,10 @@ body {
       position: relative;
       z-index: 10;
     }
+
+    @media (min-width: 768px) {
+      height: 50vw;
+    }
   }
 
   .index & {
@@ -621,7 +625,34 @@ body {
         tr:last-child td:last-child {
           padding-bottom: 0;
         }
+
+        @media (min-width: 768px) {
+          margin: 50px auto;
+          width: 500px;
+
+          td {
+            display: table-cell;
+            vertical-align: top;
+
+            &:first-child,
+            &:last-child {
+              padding: 0 0 20px 0;
+            }
+          }
+        }
       }
+
+      @media (min-width: 768px) {
+        &:after {
+          width: 60%;
+          margin: 100px;
+        }
+      }
+    }
+
+    @media (min-width: 768px) {
+      width: 700px;
+      margin: 0 auto;
     }
   }
 }
