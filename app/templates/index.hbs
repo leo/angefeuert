@@ -1,33 +1,15 @@
 {{#slick-slider autoplay=true autoplaySpeed=5000 speed=2000 arrows=false dots=true fade=true}}
-  <div class="box">
-    <picture>
-      <source srcset="images/slide-one-md.png 1x, images/slide-one-md@2x.png 2x" media="(min-width: 992px)">
-      <source srcset="images/slide-one-sm.png 1x, images/slide-one-sm@2x.png 2x" media="(min-width: 768px)">
-      <source srcset="images/slide-one@2x.png">
+  {{#each model as |index|}}
+    <div class="box">
+      <picture>
+        <source srcset="images/slide-{{index}}-md.png 1x, images/slide-{{index}}-md@2x.png 2x" media="(min-width: 992px)">
+        <source srcset="images/slide-{{index}}-sm.png 1x, images/slide-{{index}}-sm@2x.png 2x" media="(min-width: 768px)">
+        <source srcset="images/slide-{{index}}@2x.png">
 
-      <img src="images/slide-one@2x.png">
-    </picture>
-  </div>
-
-  <div class="box">
-    <picture>
-      <source srcset="images/slide-two-md.png 1x, images/slide-two-md@2x.png 2x" media="(min-width: 992px)">
-      <source srcset="images/slide-two-sm.png 1x, images/slide-two-sm@2x.png 2x" media="(min-width: 768px)">
-      <source srcset="images/slide-two@2x.png">
-
-      <img src="images/slide-two@2x.png">
-    </picture>
-  </div>
-
-  <div class="box">
-    <picture>
-      <source srcset="images/slide-three-md.png 1x, images/slide-three-md@2x.png 2x" media="(min-width: 992px)">
-      <source srcset="images/slide-three-sm.png 1x, images/slide-three-sm@2x.png 2x" media="(min-width: 768px)">
-      <source srcset="images/slide-three@2x.png">
-
-      <img src="images/slide-three@2x.png">
-    </picture>
-  </div>
+        <img src="images/slide-{{index}}@2x.png">
+      </picture>
+    </div>
+  {{/each}}
 {{/slick-slider}}
 
 <aside class="logo-big">

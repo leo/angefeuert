@@ -1,5 +1,10 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
-  titleToken: 'Start'
+  titleToken: 'Start',
+  model: () => [
+    'one',
+    'two',
+    'three'
+  ]
 });
