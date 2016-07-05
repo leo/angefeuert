@@ -229,6 +229,11 @@ body {
           width: 42px;
           height: 76px;
         }
+
+        .index & {
+          cursor: default;
+          pointer-events: none;
+        }
       }
     }
   }
