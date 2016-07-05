@@ -314,7 +314,13 @@ body {
         display: block;
         border-top: 1px solid #fff;
         border-bottom: 1px solid #fff;
-        margin: 8px -35px 0;
+        margin: 12px -35px 0;
+      }
+    }
+
+    @media (min-width: 768px) {
+      h1 {
+        font-size: 35px;
       }
     }
   }
@@ -638,14 +644,24 @@ body {
             &:last-child {
               padding: 0 0 20px 0;
             }
+
+            &:last-child {
+              text-align: right;
+
+              i {
+                float: right;
+                margin-left: 20px;
+                margin-right: 0;
+              }
+            }
           }
         }
       }
 
       @media (min-width: 768px) {
         &:after {
-          width: 60%;
-          margin: 100px;
+          width: 500px;
+          margin: 100px auto;
         }
       }
     }
