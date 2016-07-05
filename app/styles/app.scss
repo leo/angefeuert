@@ -551,6 +551,15 @@ body {
     }
 
     .address {
+      &:after {
+        content: '';
+        display: block;
+        background: rgba(151, 151, 151, 0.25);
+        height: 1px;
+        width: 70%;
+        margin: 0 auto;
+      }
+
       h2 {
         display: none;
       }
@@ -558,6 +567,7 @@ body {
       table {
         table-layout: fixed;
         width: 100%;
+        margin-top: 25px;
 
         td {
           display: block;
