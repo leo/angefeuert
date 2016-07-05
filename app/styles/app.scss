@@ -618,7 +618,7 @@ body {
           }
         }
 
-        tr:last-child td {
+        tr:last-child td:last-child {
           padding-bottom: 0;
         }
       }
