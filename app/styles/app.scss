@@ -557,7 +557,17 @@ body {
         background: rgba(151, 151, 151, 0.25);
         height: 1px;
         width: 70%;
-        margin: 0 auto;
+        margin: 60px auto;
+      }
+
+      a {
+        color: #EF6464;
+        text-decoration: none;
+      }
+
+      i {
+        margin-right: 10px;
+        width: 15px;
       }
 
       h2 {
@@ -579,6 +589,7 @@ body {
             font-weight: bold;
             font-family: 'Droid Serif', serif;
             font-size: 18px;
+            padding-bottom: 5px;
 
             &:after {
               content: ':';
@@ -589,6 +600,10 @@ body {
           &:last-child {
             padding-bottom: 30px;
           }
+        }
+
+        tr:last-child td {
+          padding-bottom: 0;
         }
       }
     }
