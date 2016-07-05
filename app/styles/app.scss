@@ -8,10 +8,10 @@ body {
   font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
-}
 
-.ember-view {
-  height: 100%;
+  > .ember-view {
+    height: 100%;
+  }
 }
 
 #menu {
@@ -72,6 +72,10 @@ body {
     position: relative;
     padding: 13px 30px 5px;
     display: none;
+
+    @media (min-width: 768px) {
+      padding: 30px 30px 20px;
+    }
   }
 
   .logo {
@@ -477,5 +481,34 @@ body {
     width: 100vw;
     height: 100%;
     object-fit: cover;
+  }
+
+  @media (min-width: 992px) {
+    .about &,
+    .service & {
+      display: flex;
+      padding-top: 0;
+      padding-bottom: 90px;
+      box-sizing: border-box;
+    }
+
+    .image {
+      order: 2;
+      padding-bottom: 0;
+      height: 100%;
+
+      &:after {
+        background-image: linear-gradient(to right, #463535 10%, transparent 80%)
+      }
+
+      img {
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .details {
+      order: 1;
+    }
   }
 }
