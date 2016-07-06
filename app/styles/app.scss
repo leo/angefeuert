@@ -681,6 +681,18 @@ body {
 
         @media (min-width: 992px) {
           width: 100%;
+
+          td {
+            &:last-child {
+              text-align: left;
+
+              i {
+                float: none;
+                margin-left: 0;
+                margin-right: 8px;
+              }
+            }
+          }
         }
       }
 
