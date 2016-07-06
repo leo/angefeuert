@@ -12,6 +12,12 @@ body {
   > .ember-view {
     height: 100%;
   }
+
+  @media (max-height: 809px) {
+    #content .inner .map .google-map {
+      height: calc(100% - 59px);
+    }
+  }
 }
 
 #menu {
@@ -720,7 +726,7 @@ body {
       width: 970px;
       padding: 0;
       display: flex;
-      height: calc(100vh - 330px);
+      height: calc(100vh - 310px);
       padding-top: 60px;
       box-sizing: border-box;
 
