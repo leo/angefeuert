@@ -436,11 +436,17 @@ body {
         right: 0;
         text-transform: none;
         width: 193px;
-        background: url(/images/privacy.svg) no-repeat right bottom;
+        background: url(/images/privacy.svg) no-repeat right top;
         padding: 33px 0 0 39px;
         box-sizing: border-box;
         height: 65px;
         font-size: 14px;
+        transition: all .3s;
+
+        &:hover {
+          color: #fff;
+          height: 75px;
+        }
       }
     }
   }

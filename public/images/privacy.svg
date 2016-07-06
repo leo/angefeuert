@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="191px" height="64px" viewBox="0 0 191 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="191px" height="99px" viewBox="0 0 191 99" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 3.8.3 (29802) - http://www.bohemiancoding.com/sketch -->
     <title>Desktop</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
     <g id="Kontakt" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" fill-opacity="0.162250906">
-        <ellipse id="Oval-2" fill="#000000" cx="215" cy="65" rx="215" ry="65"></ellipse>
+        <path d="M0.0998358901,63 C3.59594942,28.026814 98.471876,0 215,0 C333.741221,0 430,29.1014913 430,65 C430,100.898509 333.741221,130 215,130 C207.572684,130 200.233333,129.886139 193,129.663875 L193,175 L0,175 L0,63 L0.0998358901,63 Z" id="Combined-Shape" fill="#000000"></path>
     </g>
 </svg>
