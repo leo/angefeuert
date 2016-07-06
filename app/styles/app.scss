@@ -701,8 +701,13 @@ body {
         @media (min-width: 992px) {
           width: 100%;
           margin-top: 0;
+          table-layout: auto;
 
           td {
+            &:first-child {
+              width: 240px;
+            }
+
             &:last-child {
               text-align: left;
 
