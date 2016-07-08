@@ -10,11 +10,13 @@
     <p>Selbige können Sie auch nach ihren Leistungen sortieren:</p>
   </aside>
 
-  <aside class="companies">
+  <ul class="companies">
     {{#each model as |company|}}
-      <a href="{{company.url}}" target="_blank" class="item">
-        <img src="/images/partners/{{company.name}}.png" />
-      </a>
+      <li class="item">
+        <a href="{{company.url}}" target="_blank">
+          <img src="/images/partners/{{company.name}}.png" />
+        </a>
+      </li>
     {{/each}}
-  </aside>
+  </ul>
 </section>
