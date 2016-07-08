@@ -11,26 +11,26 @@
 
     <ul class="list">
       <li>
-        <a href="#fireplace-stoves" class="active">Kaminöfen</a>
+        <a href="#kaminöfen">Kaminöfen</a>
       </li>
       <li>
-        <a href="#fireplace-stoves">Speicheröfen</a>
+        <a href="#speicheröfen">Speicheröfen</a>
       </li>
       <li>
-        <a href="#fireplace-stoves">Kachelöfen</a>
+        <a href="#kachelöfen">Kachelöfen</a>
       </li>
       <li>
-        <a href="#fireplace-stoves">Heizkamine</a>
+        <a href="#heizkamine">Heizkamine</a>
       </li>
       <li>
-        <a href="#fireplace-stoves">Herde</a>
+        <a href="#herde">Herde</a>
       </li>
     </ul>
   </aside>
 
   <ul class="companies">
     {{#each model as |company|}}
-      <li class="item">
+      <li class="item {{classes company.categories}}">
         <a href="{{company.url}}" target="_blank">
           <img src="/images/partners/{{company.name}}.png" />
         </a>
