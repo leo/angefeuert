@@ -8,12 +8,31 @@ export default Ember.Route.extend({
       const iso = $('.companies').isotope({
         itemSelector: '.item',
         layoutMode: 'fitRows'
-      })
+      });
 
-      $('.categories a').click(event => {
-        alert('soos')
-        event.preventDefault()
-      })
+      let currentFilter = [];
+
+      $('.categories a').click(function (event) {
+        const category = $(this).attr('href').split('#')[1];
+
+        if ($(this).hasClass('on')) {
+          let index = currentFilter.indexOf(category);
+          currentFilter.splice(index, 1);
+        } else {
+          currentFilter.push(category);
+        }
+
+        let filter = '.' + currentFilter.join('.');
+
+        if (filter === '.') {
+          filter = '*';
+        }
+
+        iso.isotope({ filter });
+
+        $(this).toggleClass('on');
+        event.preventDefault();
+      });
     }
   },
   model () {
@@ -109,6 +128,6 @@ export default Ember.Route.extend({
           'speicherkamine'
         ]
       }
-    ]
+    ];
   }
 });
