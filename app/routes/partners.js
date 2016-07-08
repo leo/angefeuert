@@ -1,19 +1,14 @@
 import Ember from 'ember';
-const { $ } = Ember;
 
 export default Ember.Route.extend({
   titleToken: 'Partner',
-  init () {
-    const container = $('.companies')
-
-    $('.companies').isotope({
-      itemSelector : '.item',
-      layoutMode : 'fitRows'
-    });
-
-    console.log(container)
-
-    //iso.isotope('appended', iso.find('.item:not(.isotope-item)'));
+  actions: {
+    afterRender () {
+      const iso = new Isotope('.companies', {
+        itemSelector: '.item',
+        layoutMode: 'fitRows'
+      })
+    }
   },
   model () {
     return [
