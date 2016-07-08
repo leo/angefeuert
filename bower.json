@@ -6,6 +6,7 @@
     "ember-cli-test-loader": "0.2.2",
     "ember-qunit-notifications": "0.1.0",
     "slick-carousel": "^1.6.0",
-    "font-awesome": "~4.5.0"
+    "font-awesome": "~4.5.0",
+    "isotope": "^3.0.1"
   }
 }

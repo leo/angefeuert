@@ -4,8 +4,10 @@ var EmberApp = require('ember-cli/lib/broccoli/ember-app');
 
 module.exports = function(defaults) {
   var app = new EmberApp(defaults, {
-    
+
   });
+
+  app.import(app.bowerDirectory + '/isotope/dist/isotope.pkgd.js')
 
   // Use `app.import` to add additional libraries to the generated
   // output files.
