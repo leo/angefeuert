@@ -1,3 +1,20 @@
 <aside class="title">
   <h1>Partner</h1>
 </aside>
+
+<section class="inner">
+  <aside class="categories">
+    <h2>Kategorien</h2>
+
+    <p>Nebenstehend finden Sie eine Liste aller Partner, mit denen wir zusammenarbeiten.</p>
+    <p>Selbige können Sie auch nach ihren Leistungen sortieren:</p>
+  </aside>
+
+  <aside class="companies">
+    {{#each model as |company|}}
+      <a href="{{company.url}}" target="_blank" class="item">
+        <img src="/images/partners/{{company.name}}.png" />
+      </a>
+    {{/each}}
+  </aside>
+</section>
