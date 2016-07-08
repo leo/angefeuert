@@ -10,6 +10,7 @@
   "scripts": {
     "build": "ember build",
     "start": "ember serve -w",
+    "now-start": "ember fastboot",
     "test": "ember test"
   },
   "repository": "leo/angefeuert",
@@ -27,6 +28,7 @@
     "ember-cli-babel": "^5.1.6",
     "ember-cli-dependency-checker": "^1.2.0",
     "ember-cli-document-title": "0.3.1",
+    "ember-cli-fastboot": "1.0.0-beta.4",
     "ember-cli-google-fonts": "2.3.0",
     "ember-cli-htmlbars": "^1.0.3",
     "ember-cli-htmlbars-inline-precompile": "^0.3.1",
