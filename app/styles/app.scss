@@ -682,6 +682,22 @@ body {
           margin: 70px auto;
         }
       }
+
+      @media (min-width: 992px) {
+        width: 425px;
+        margin: 0;
+        border-right: 1px solid rgba(255, 255, 255, .16);
+        padding-right: 50px;
+        box-sizing: border-box;
+
+        &:after {
+          display: none;
+        }
+
+        h2 {
+          display: block;
+        }
+      }
     }
 
     .companies {
