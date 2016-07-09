@@ -720,6 +720,11 @@ body {
         a {
           height: 100px;
           margin: 20px;
+
+          img {
+            max-width: 70%;
+            max-height: 55%;
+          }
         }
       }
     }
