@@ -743,6 +743,22 @@ body {
           }
         }
       }
+
+      @media (min-width: 992px) {
+        height: 100% !important;
+        width: 545px;
+        margin: -12px;
+        margin-left: 50px;
+
+        li {
+          width: calc(100% / 3);
+        }
+
+        a {
+          margin: 12px;
+          height: 80px;
+        }
+      }
     }
 
     .address {
