@@ -684,7 +684,7 @@ body {
       }
 
       @media (min-width: 992px) {
-        width: 425px;
+        width: 370px;
         margin: 0;
         border-right: 1px solid rgba(255, 255, 255, .16);
         padding-right: 50px;
@@ -891,6 +891,14 @@ body {
       height: calc(100vh - 310px);
       padding-top: 60px;
       box-sizing: border-box;
+
+      .partners & {
+        min-height: 456px;
+      }
+
+      .contact & {
+        min-height: 436px;
+      }
 
       aside {
         height: 100%;
