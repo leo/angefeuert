@@ -14,4 +14,4 @@ export default Ember.Controller.extend({
       toggler.toggleClass('on')
     }
   }.observes('currentPath')
-});
+})

@@ -32,7 +32,7 @@ export default Ember.Route.extend({
 
         $(this).toggleClass('on')
         event.preventDefault()
-      });
+      })
     }
   },
   model () {

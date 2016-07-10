@@ -14,4 +14,4 @@ export default Ember.Component.extend({
 
     event.preventDefault()
   }
-});
+})
