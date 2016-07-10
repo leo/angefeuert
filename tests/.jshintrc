@@ -25,6 +25,7 @@
   ],
   "node": false,
   "browser": false,
+  "asi": true,
   "boss": true,
   "curly": true,
   "debug": false,

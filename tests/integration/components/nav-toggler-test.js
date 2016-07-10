@@ -12,13 +12,4 @@ test('it renders', function(assert) {
   this.render(hbs`{{nav-toggler}}`)
 
   assert.equal(this.$().text().trim(), '')
-
-  // Template block usage:
-  this.render(hbs`
-    {{#nav-toggler}}
-      template block text
-    {{/nav-toggler}}
-  `)
-
-  assert.equal(this.$().text().trim(), 'template block text')
 })
