@@ -1,4 +1,4 @@
-import Ember from 'ember';
+import Ember from 'ember'
 
 export default Ember.Route.extend({
   titleToken: 'Start',
@@ -7,4 +7,4 @@ export default Ember.Route.extend({
     'two',
     'three'
   ]
-});
+})

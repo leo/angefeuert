@@ -1,9 +1,9 @@
-import Ember from 'ember';
+import Ember from 'ember'
 
 export default Ember.Controller.extend({
   init () {
     Ember.run.scheduleOnce('afterRender', this, function() {
-      this.send('afterRender');
-    });
+      this.send('afterRender')
+    })
   }
 });

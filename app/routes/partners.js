@@ -1,5 +1,5 @@
-import Ember from 'ember';
-const { $ } = Ember;
+import Ember from 'ember'
+const { $ } = Ember
 
 export default Ember.Route.extend({
   titleToken: 'Partner',
@@ -8,30 +8,30 @@ export default Ember.Route.extend({
       const iso = $('.companies').isotope({
         itemSelector: '.item',
         layoutMode: 'fitRows'
-      });
+      })
 
-      let currentFilter = [];
+      let currentFilter = []
 
       $('.categories a').click(function (event) {
-        const category = $(this).attr('href').split('#')[1];
+        const category = $(this).attr('href').split('#')[1]
 
         if ($(this).hasClass('on')) {
-          let index = currentFilter.indexOf(category);
-          currentFilter.splice(index, 1);
+          let index = currentFilter.indexOf(category)
+          currentFilter.splice(index, 1)
         } else {
-          currentFilter.push(category);
+          currentFilter.push(category)
         }
 
-        let filter = '.' + currentFilter.join('.');
+        let filter = '.' + currentFilter.join('.')
 
         if (filter === '.') {
-          filter = '*';
+          filter = '*'
         }
 
-        iso.isotope({ filter });
+        iso.isotope({ filter })
 
-        $(this).toggleClass('on');
-        event.preventDefault();
+        $(this).toggleClass('on')
+        event.preventDefault()
       });
     }
   },
@@ -128,6 +128,6 @@ export default Ember.Route.extend({
           'speicherkamine'
         ]
       }
-    ];
+    ]
   }
-});
+})

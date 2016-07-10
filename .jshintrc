@@ -5,6 +5,7 @@
     "-Promise"
   ],
   "browser": true,
+  "asi": true,
   "boss": true,
   "curly": true,
   "debug": false,

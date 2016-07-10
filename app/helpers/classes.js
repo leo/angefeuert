@@ -1,7 +1,7 @@
-import Ember from 'ember';
+import Ember from 'ember'
 
 export function classes (params) {
-  return params[0].join(' ');
+  return params[0].join(' ')
 }
 
-export default Ember.Helper.helper(classes);
+export default Ember.Helper.helper(classes)
