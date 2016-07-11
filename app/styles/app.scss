@@ -767,6 +767,39 @@ body {
       }
     }
 
+    .first-page,
+    .second-page {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .product {
+      display: block;
+      text-decoration: none;
+      margin: 50px 0;
+      width: 100%;
+
+      figure {
+        margin: 0;
+        text-align: center;
+        width: inherit;
+      }
+
+      figcaption {
+        color: #fff;
+        font-size: 19px;
+        font-style: italic;
+        font-family: 'Droid Serif', serif;
+        letter-spacing: 0.44px;
+        margin-top: 20px;
+      }
+
+      img {
+        max-width: 60%;
+        max-height: 230px;
+      }
+    }
+
     .address {
       &:after {
         content: '';

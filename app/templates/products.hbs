@@ -1,3 +1,27 @@
 <aside class="title">
   <h1>Produkte</h1>
 </aside>
+
+<section class="inner">
+  <nav class="first-page">
+    {{#each model.first as |product|}}
+      {{#link-to "contact" class="product"}}
+        <figure>
+          <img src="/images/products/{{lowercase product}}.png">
+          <figcaption>{{product}}</figcaption>
+        </figure>
+      {{/link-to}}
+    {{/each}}
+  </nav>
+
+  <nav class="second-page">
+    {{#each model.second as |product|}}
+      {{#link-to "contact" class="product"}}
+        <figure>
+          <img src="/images/products/{{lowercase product}}.png">
+          <figcaption>{{product}}</figcaption>
+        </figure>
+      {{/link-to}}
+    {{/each}}
+  </nav>
+</section>
