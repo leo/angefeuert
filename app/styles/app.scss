@@ -334,6 +334,10 @@ body {
       h1 {
         font-size: 35px;
       }
+
+      .products & {
+        margin-bottom: 40px;
+      }
     }
 
     @media (min-width: 992px) {
@@ -819,6 +823,7 @@ body {
 
         figcaption {
           display: block;
+          font-size: 18px;
         }
 
         img {
