@@ -13,7 +13,7 @@ body {
     height: 100%;
   }
 
-  @media (max-height: 809px) {
+  @media (max-height: 809px) and (min-width: 992px) {
     #content .inner .map .google-map {
       height: calc(100% - 59px);
     }
