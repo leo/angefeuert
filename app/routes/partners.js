@@ -3,7 +3,6 @@ const { $ } = Ember
 
 export default Ember.Route.extend({
   titleToken: 'Partner',
-
   actions: {
     didTransition () {
       Ember.run.schedule('afterRender', this, function () {
