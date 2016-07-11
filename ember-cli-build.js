@@ -8,7 +8,8 @@ module.exports = function(defaults) {
       exclude: [
         'images'
       ]
-    }
+    },
+    vendorFiles: false
   })
 
   app.import(app.bowerDirectory + '/isotope/dist/isotope.pkgd.js')
