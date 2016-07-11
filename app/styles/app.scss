@@ -781,6 +781,10 @@ body {
       flex-wrap: wrap;
     }
 
+    .mover {
+      display: none;
+    }
+
     .product {
       display: block;
       text-decoration: none;
@@ -965,6 +969,15 @@ body {
       padding-top: 60px;
       box-sizing: border-box;
 
+      .second-page {
+        display: none;
+      }
+
+      .first-page,
+      .second-page {
+
+      }
+
       .partners & {
         min-height: 456px;
       }
@@ -1014,5 +1027,21 @@ body {
   @media (min-width: 992px) {
     padding-top: 90px;
     box-sizing: border-box;
+
+    .mover {
+      display: flex;
+      background-image: linear-gradient(to right, #463535 0%, #301313 100%);
+      position: absolute;
+      right: 0;
+      top: 0;
+      height: calc(100% - 90px);
+      width: 85px;
+      justify-content: center;
+      align-items: center;
+
+      svg {
+        opacity: .78;
+      }
+    }
   }
 }
