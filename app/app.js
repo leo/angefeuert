@@ -10,7 +10,15 @@ Ember.MODEL_FACTORY_INJECTIONS = true
 App = Ember.Application.extend({
   modulePrefix: config.modulePrefix,
   podModulePrefix: config.podModulePrefix,
-  Resolver
+  Resolver,
+  ready () {
+    outdatedBrowser({
+      bgColor: '#f25648',
+      color: '#ffffff',
+      lowerThan: 'transform',
+      languagePath: ''
+    })
+  }
 })
 
 loadInitializers(App, config.modulePrefix)
