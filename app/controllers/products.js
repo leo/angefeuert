@@ -5,6 +5,14 @@ export default Ember.Controller.extend({
     {
       breakpoint: 0,
       settings: 'unslick'
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToScroll: 3,
+        slidesToShow: 3,
+        arrows: false
+      }
     }
   ]
 });

@@ -262,6 +262,22 @@ body {
 
   .mover {
     display: none;
+
+    @media (min-width: 768px) {
+      display: flex;
+      background-image: linear-gradient(to right, #463535 0%, #301313 100%);
+      position: absolute;
+      right: 0;
+      top: 0;
+      height: calc(100% - 90px);
+      width: 85px;
+      justify-content: center;
+      align-items: center;
+
+      svg {
+        opacity: .78;
+      }
+    }
   }
 
   .google-map {
@@ -806,7 +822,6 @@ body {
       }
 
       @media (min-width: 768px) {
-        width: calc(100% / 3);
         text-align: center;
         display: flex;
         align-items: stretch;
@@ -1021,21 +1036,21 @@ body {
   @media (min-width: 992px) {
     padding-top: 90px;
     box-sizing: border-box;
+  }
+}
 
-    .mover {
-      display: flex;
-      background-image: linear-gradient(to right, #463535 0%, #301313 100%);
-      position: absolute;
-      right: 0;
-      top: 0;
-      height: calc(100% - 90px);
-      width: 85px;
-      justify-content: center;
-      align-items: center;
+.products #content .inner {
+  .slick-slider {
+    height: 500px;
+  }
 
-      svg {
-        opacity: .78;
-      }
-    }
+  .slick-track {
+    position: absolute;
+  }
+
+  .slick-list {
+    display: flex;
+    width: 500px;
+    height: inherit !important;
   }
 }
