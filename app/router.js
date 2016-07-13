@@ -9,7 +9,9 @@ Router.map(function() {
   this.route('products', {
     path: '/produkte'
   }, function() {
-    this.route('detail');
+    this.route('detail', {
+      path: '/**'
+    })
   })
 
   this.route('about', {
