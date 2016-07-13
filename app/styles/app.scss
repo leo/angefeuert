@@ -849,32 +849,11 @@ body {
 
       @media (min-width: 992px) {
         margin: 0;
-
-        figure {
-          display: flex;
-          width: 100%;
-          flex-wrap: wrap;
-          justify-content: center;
-          height: 100%;
-          align-content: space-between;
-        }
+        width: auto;
+        height: 100%;
 
         figcaption {
-          display: block;
           font-size: 18px;
-          height: 22px;
-          padding-top: 0;
-          line-height: 22px;
-          width: 100%;
-        }
-
-        img {
-          width: 100%;
-          max-width: none;
-          max-height: none;
-          display: block;
-          object-fit: contain;
-          height: calc(100% - 50px);
         }
       }
     }
@@ -1018,6 +997,12 @@ body {
         min-height: 456px;
       }
 
+      .products & {
+        padding: 0;
+        display: flex;
+        align-items: center;
+      }
+
       .contact & {
         min-height: 436px;
       }
@@ -1068,7 +1053,10 @@ body {
 
 .products #content .inner {
   .slick-slider {
-    height: 250px;
+    height: 350px;
+    display: block;
+    width: 100%;
+    padding-bottom: 0;
   }
 
   .slick-track {
@@ -1079,8 +1067,8 @@ body {
   .slick-arrow {
     position: fixed;
     box-sizing: border-box;
-    padding-top: 68px;
     height: 100%;
+    padding-bottom: 90px;
     width: 85px;
     cursor: pointer;
     display: flex;
