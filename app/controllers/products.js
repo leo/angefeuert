@@ -8,7 +8,7 @@ export default Ember.Controller.extend({
       settings: 'unslick'
     },
     {
-      breakpoint: 768,
+      breakpoint: 767,
       settings: {
         slidesToScroll: 3,
         slidesToShow: 3
