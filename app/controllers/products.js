@@ -13,7 +13,8 @@ export default Ember.Controller.extend({
       breakpoint: 991,
       settings: {
         slidesToScroll: 3,
-        slidesToShow: 3
+        slidesToShow: 3,
+        infinite: false
       }
     }
   ]

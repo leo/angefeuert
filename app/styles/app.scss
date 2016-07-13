@@ -1085,9 +1085,11 @@ body {
     padding-bottom: 90px;
     width: 85px;
     cursor: pointer;
-    display: flex;
+    display: flex !important;
     justify-content: center;
     align-items: center;
+    opacity: 1;
+    transition: opacity .4s;
 
     &:before {
       content: '';
@@ -1097,6 +1099,10 @@ body {
       width: 50px;
       display: block;
       opacity: .78;
+    }
+
+    &.slick-disabled {
+      opacity: 0;
     }
 
     &.slick-prev {
