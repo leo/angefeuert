@@ -778,8 +778,12 @@ body {
     .product {
       display: block;
       text-decoration: none;
-      margin: 50px 0;
+      margin: 100px 0;
       width: 100%;
+
+      &:first-child {
+        margin-top: 70px;
+      }
 
       figure {
         margin: 0;
