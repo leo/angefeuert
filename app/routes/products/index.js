@@ -4,12 +4,12 @@ export default Ember.Route.extend({
   titleToken: 'Produkte',
   model () {
     return [
-      'Kaminöfen',
-      'Speicheröfen',
-      'Kachelöfen',
-      'Heizkamine',
-      'Herde',
-      'Zubehör'
+      'kaminöfen',
+      'speicheröfen',
+      'kachelöfen',
+      'heizkamine',
+      'herde',
+      'zubehör'
     ]
   }
 })

@@ -6,10 +6,10 @@
   {{#slick-slider mobileFirst=true responsive=breakpoints class="sliding"}}
     {{#each model as |product|}}
 
-      {{#link-to "contact" class="product"}}
+      {{#link-to "products.detail" product class="product"}}
         <figure>
-          <img src="/images/products/{{lowercase product}}.png">
-          <figcaption>{{product}}</figcaption>
+          <img src="/images/products/{{product}}.png">
+          <figcaption>{{capitalize product}}</figcaption>
         </figure>
       {{/link-to}}
 

@@ -10,7 +10,7 @@ Router.map(function() {
     path: '/produkte'
   }, function() {
     this.route('detail', {
-      path: '/**'
+      path: '/:product'
     })
   })
 

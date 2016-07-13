@@ -1,10 +1,10 @@
-import { lowercase } from 'angefeuert/helpers/lowercase';
+import { capitalize } from 'angefeuert/helpers/capitalize';
 import { module, test } from 'qunit';
 
-module('Unit | Helper | lowercase');
+module('Unit | Helper | capitalize');
 
 // Replace this with your real tests.
 test('it works', function(assert) {
-  let result = lowercase([42]);
+  let result = capitalize([42]);
   assert.ok(result);
 });
