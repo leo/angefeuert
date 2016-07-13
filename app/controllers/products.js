@@ -10,7 +10,7 @@ export default Ember.Controller.extend({
     {
       // We need to break earlier
       // Otherwise, the slider would appear after CSS took effect
-      breakpoint: 767,
+      breakpoint: 991,
       settings: {
         slidesToScroll: 3,
         slidesToShow: 3

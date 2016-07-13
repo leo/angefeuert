@@ -777,6 +777,13 @@ body {
       }
     }
 
+    @media (min-width: 768px) {
+      .sliding {
+        display: flex;
+        flex-wrap: wrap;
+      }
+    }
+
     .product {
       display: block;
       text-decoration: none;
@@ -809,6 +816,38 @@ body {
       }
 
       @media (min-width: 768px) {
+        width: calc(100% / 2);
+        height: 300px;
+        margin: 70px 0;
+
+        figure {
+          display: flex;
+          width: 100%;
+          height: 100%;
+          align-content: space-between;
+          justify-content: center;
+          flex-wrap: wrap;
+        }
+
+        figcaption {
+          padding-top: 0;
+          line-height: 22px;
+          height: 22px;
+          width: 100%;
+          display: block;
+        }
+
+        img {
+          display: block;
+          width: 100%;
+          max-width: none;
+          max-height: none;
+          object-fit: contain;
+          height: calc(100% - 50px);
+        }
+      }
+
+      @media (min-width: 992px) {
         margin: 0;
 
         figure {
@@ -974,15 +1013,6 @@ body {
       height: calc(100vh - 310px);
       padding-top: 60px;
       box-sizing: border-box;
-
-      .second-page {
-        display: none;
-      }
-
-      .first-page,
-      .second-page {
-
-      }
 
       .partners & {
         min-height: 456px;

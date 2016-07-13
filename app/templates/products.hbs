@@ -2,23 +2,17 @@
   <h1>Produkte</h1>
 </aside>
 
-<a href="#" class="mover prev-page">
-  {{inline-svg "images/mover.svg"}}
-</a>
-
 <section class="inner">
-  {{#slick-slider mobileFirst=true responsive=breakpoints}}
+  {{#slick-slider mobileFirst=true responsive=breakpoints class="sliding"}}
     {{#each model as |product|}}
+
       {{#link-to "contact" class="product"}}
         <figure>
           <img src="/images/products/{{lowercase product}}.png">
           <figcaption>{{product}}</figcaption>
         </figure>
       {{/link-to}}
+
     {{/each}}
   {{/slick-slider}}
 </section>
-
-<a href="#" class="mover next-page">
-  {{inline-svg "images/mover.svg"}}
-</a>
