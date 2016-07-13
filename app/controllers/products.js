@@ -8,6 +8,8 @@ export default Ember.Controller.extend({
       settings: 'unslick'
     },
     {
+      // We need to break earlier
+      // Otherwise, the slider would appear after CSS took effect
       breakpoint: 767,
       settings: {
         slidesToScroll: 3,
