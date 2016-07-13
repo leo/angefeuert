@@ -10,7 +10,7 @@
   "scripts": {
     "build": "ember build",
     "start": "ember serve -w",
-    "now-start": "ember fastboot",
+    "now-start": "ember serve -prod",
     "test": "ember test"
   },
   "repository": "leo/angefeuert",
