@@ -856,6 +856,10 @@ body {
         box-sizing: border-box;
         padding-top: 20px;
 
+        &:first-child {
+          margin-top: 0;
+        }
+
         &:hover img {
           transform: scale(1.05);
         }
