@@ -11,9 +11,7 @@ export default Ember.Controller.extend({
       breakpoint: 768,
       settings: {
         slidesToScroll: 3,
-        slidesToShow: 3,
-        prevArrow: $('.prev-page'),
-        nextArrow: $('.next-page')
+        slidesToShow: 3
       }
     }
   ]

@@ -266,39 +266,6 @@ body {
     }
   }
 
-  .mover {
-    display: none;
-
-    @media (min-width: 768px) {
-      display: flex;
-      background-image: linear-gradient(to right, #463535 0%, #301313 100%);
-      position: absolute;
-      top: 68px;
-      height: calc(100% - 68px);
-      width: 85px;
-      justify-content: center;
-      align-items: center;
-      display: none;
-
-      svg {
-        opacity: .78;
-      }
-
-      &.prev-page {
-        left: 0;
-        background-image: linear-gradient(to left, #463535 0%, #301313 100%);
-
-        svg {
-          transform: rotate(180deg);
-        }
-      }
-
-      &.next-page {
-        right: 0;
-      }
-    }
-  }
-
   .google-map {
     border-radius: 5px;
     overflow: hidden;
@@ -832,7 +799,8 @@ body {
         font-style: italic;
         font-family: 'Droid Serif', serif;
         letter-spacing: 0.44px;
-        margin-top: 20px;
+        padding-top: 20px;
+        box-sizing: border-box;
       }
 
       img {
@@ -1070,11 +1038,38 @@ body {
 
   .slick-track {
     position: absolute;
+    display: flex;
   }
 
-  .slick-list {
+  .slick-arrow {
+    position: fixed;
+    box-sizing: border-box;
+    padding-top: 68px;
+    height: 100%;
+    width: 85px;
+    cursor: pointer;
     display: flex;
-    width: 100%;
-    height: inherit !important;
+    justify-content: center;
+    align-items: center;
+
+    &:before {
+      content: '';
+      font-family: initial;
+      background: url(/images/mover.svg) no-repeat center center;
+      height: 50px;
+      width: 50px;
+      display: block;
+      opacity: 1;
+    }
+
+    &.slick-prev {
+      left: 0;
+      background-image: linear-gradient(to left, #463535 0%, #301313 100%);
+    }
+
+    &.slick-next {
+      right: 0;
+      background-image: linear-gradient(to right, #463535 0%, #301313 100%);
+    }
   }
 }
