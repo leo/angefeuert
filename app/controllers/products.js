@@ -1,4 +1,5 @@
-import Ember from 'ember';
+import Ember from 'ember'
+const { $ } = Ember
 
 export default Ember.Controller.extend({
   breakpoints: [
@@ -11,7 +12,8 @@ export default Ember.Controller.extend({
       settings: {
         slidesToScroll: 3,
         slidesToShow: 3,
-        arrows: false
+        prevArrow: $('.prev-page'),
+        nextArrow: $('.next-page')
       }
     }
   ]
