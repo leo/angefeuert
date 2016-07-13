@@ -819,6 +819,7 @@ body {
         width: calc(100% / 2);
         height: 300px;
         margin: 70px 0;
+        outline: none;
 
         figure {
           display: flex;
@@ -833,6 +834,7 @@ body {
           padding-top: 0;
           line-height: 22px;
           height: 22px;
+          font-size: 18px;
           width: 100%;
           display: block;
         }
@@ -851,9 +853,20 @@ body {
         margin: 0;
         width: auto;
         height: 100%;
+        box-sizing: border-box;
+        padding-top: 20px;
+
+        &:hover img {
+          transform: scale(1.05);
+        }
 
         figcaption {
-          font-size: 18px;
+          font-size: 19px;
+        }
+
+        img {
+          transition: transform .4s;
+          height: calc(100% - 60px);
         }
       }
     }
@@ -1053,10 +1066,11 @@ body {
 
 .products #content .inner {
   .slick-slider {
-    height: 350px;
+    height: 370px;
     display: block;
     width: 100%;
     padding-bottom: 0;
+    margin-top: -20px;
   }
 
   .slick-track {
