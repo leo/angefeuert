@@ -7,8 +7,8 @@
 </a>
 
 <section class="inner">
-  <nav class="first-page">
-    {{#each model.first as |product|}}
+  {{#slick-slider slidesToShow=3 slidesToScroll=3 arrows=false mobileFirst=true responsive=breakpoints}}
+    {{#each model as |product|}}
       {{#link-to "contact" class="product"}}
         <figure>
           <img src="/images/products/{{lowercase product}}.png">
@@ -16,18 +16,7 @@
         </figure>
       {{/link-to}}
     {{/each}}
-  </nav>
-
-  <nav class="second-page">
-    {{#each model.second as |product|}}
-      {{#link-to "contact" class="product"}}
-        <figure>
-          <img src="/images/products/{{lowercase product}}.png">
-          <figcaption>{{product}}</figcaption>
-        </figure>
-      {{/link-to}}
-    {{/each}}
-  </nav>
+  {{/slick-slider}}
 </section>
 
 <a href="#" class="mover next-page">

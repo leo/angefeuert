@@ -260,6 +260,10 @@ body {
   padding-top: 68px;
   color: #fff;
 
+  .mover {
+    display: none;
+  }
+
   .google-map {
     border-radius: 5px;
     overflow: hidden;
@@ -769,20 +773,6 @@ body {
           }
         }
       }
-    }
-
-    .products & {
-      padding-bottom: 70px;
-    }
-
-    .first-page,
-    .second-page {
-      display: flex;
-      flex-wrap: wrap;
-    }
-
-    .mover {
-      display: none;
     }
 
     .product {
