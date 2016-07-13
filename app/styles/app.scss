@@ -1059,12 +1059,16 @@ body {
       height: 50px;
       width: 50px;
       display: block;
-      opacity: 1;
+      opacity: .78;
     }
 
     &.slick-prev {
       left: 0;
       background-image: linear-gradient(to left, #463535 0%, #301313 100%);
+
+      &:before {
+        transform: rotate(180deg);
+      }
     }
 
     &.slick-next {
