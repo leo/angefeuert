@@ -1085,22 +1085,28 @@ body {
   .slick-arrow {
     position: fixed;
     box-sizing: border-box;
-    height: 100%;
-    padding-bottom: 90px;
+    height: calc(100% - 90px);
+    top: 0;
+    bottom: 90px;
     width: 85px;
     cursor: pointer;
     display: flex !important;
     justify-content: center;
     align-items: center;
-    opacity: 1;
+    opacity: .70;
     transition: opacity .4s;
+    transform: none;
+
+    &:hover {
+      opacity: 1;
+    }
 
     &:before {
       content: '';
       font-family: initial;
       background: url(/images/mover.svg) no-repeat center center;
-      height: 50px;
-      width: 50px;
+      height: 57px;
+      width: 100%;
       display: block;
       opacity: .78;
     }
