@@ -1,10 +1,16 @@
 import Ember from 'ember'
+import capitalize from '../../helpers/capitalize'
 
 export default Ember.Route.extend({
-  titleToken: 'Kachelöfen — Produkte',
+  titleToken (model) {
+    return model.capitalized + ' — Produkte'
+  },
   model (params) {
     const name = params.product
-    console.log(name)
-    return []
+
+    return {
+      lowercase: name,
+      capitalized: capitalize.compute([ name ])
+    }
   }
 })
