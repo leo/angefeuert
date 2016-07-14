@@ -261,7 +261,7 @@ body {
   color: #fff;
 
   @media (min-width: 768px) {
-    .products & {
+    .products.index & {
       box-sizing: border-box;
     }
   }
@@ -341,7 +341,7 @@ body {
         font-size: 35px;
       }
 
-      .products & {
+      .products.index & {
         margin-bottom: 40px;
       }
     }
@@ -997,7 +997,7 @@ body {
       width: 700px;
       margin: 0 auto;
 
-      .products & {
+      .products.index & {
         padding: 0 0 100px 0;
       }
     }
@@ -1014,7 +1014,7 @@ body {
         min-height: 456px;
       }
 
-      .products & {
+      .products.index & {
         padding: 0;
         display: flex;
         align-items: center;
@@ -1068,7 +1068,7 @@ body {
   }
 }
 
-.products #content .inner {
+.products.index #content .inner {
   .slick-slider {
     height: 370px;
     display: block;
