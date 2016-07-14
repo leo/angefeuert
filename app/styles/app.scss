@@ -1130,3 +1130,43 @@ body {
     }
   }
 }
+
+.products.detail #content .inner {
+  .slick-track figure {
+    margin: 0;
+  }
+
+  .slick-dots {
+    position: relative;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    width: auto;
+    top: auto;
+    height: 55px;
+    padding-left: 15px;
+    box-sizing: border-box;
+    justify-content: flex-start;
+
+    li {
+      height: 12px;
+      width: 12px;
+      margin: 0 4px;
+      background: #D0D0D0;
+
+      &.slick-active {
+        background: #EC6225;
+      }
+    }
+  }
+
+  .slick-slider {
+    background: rgba(0, 0, 0, 0.14);
+    border-radius: 7px;
+    overflow: hidden;
+    z-index: 200;
+  }
+
+  .slick-list {
+    z-index: 100;
+  }
+}
