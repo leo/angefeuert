@@ -1174,6 +1174,10 @@ body {
     @media (min-width: 768px) {
       height: 350px !important;
     }
+
+    @media (min-width: 992px) {
+      height: 315px !important;
+    }
   }
 
   .product-slider {
@@ -1181,6 +1185,15 @@ body {
 
     @media (min-width: 768px) {
       margin-top: 30px;
+
+      figure img {
+        width: 100%;
+      }
+    }
+
+    @media (min-width: 992px) {
+      width: calc(50% - 50px);
+      margin-top: 0;
     }
   }
 
@@ -1191,6 +1204,12 @@ body {
 
     h2 {
       margin-top: 45px;
+
+      @media (min-width: 992px) {
+        &:first-child {
+          margin-top: 0;
+        }
+      }
     }
 
     .bottom-button {
@@ -1201,6 +1220,17 @@ body {
         margin-left: 0;
         margin-right: 0;
       }
+
+      @media (min-width: 992px) {
+        position: relative;
+        bottom: auto;
+        left: auto;
+        margin-top: 20px;
+      }
+    }
+
+    @media (min-width: 992px) {
+      padding-top: 0;
     }
   }
 }
