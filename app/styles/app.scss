@@ -1175,4 +1175,19 @@ body {
   .product-slider {
     margin-top: 20px;
   }
+
+  .details {
+    h2, p {
+      margin: 20px 0;
+    }
+
+    h2 {
+      margin-top: 45px;
+    }
+
+    .bottom-button {
+      margin-left: -25px;
+      margin-right: -25px;
+    }
+  }
 }
