@@ -1236,3 +1236,30 @@ body {
     }
   }
 }
+
+.legal-info {
+  h1 {
+    font-family: 'Droid Serif', serif;
+    font-weight: 700;
+    font-size: 25px;
+
+    & + h2 {
+      margin-top: 20px;
+    }
+  }
+
+  h2 {
+    font-size: 19px;
+    margin-top: 40px;
+  }
+
+  p {
+    line-height: 21px;
+    font-size: 15px;
+  }
+
+  a {
+    color: #EF6464;
+    text-decoration: none;
+  }
+}
