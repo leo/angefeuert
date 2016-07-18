@@ -20,7 +20,7 @@ export default Ember.Route.extend({
     const slides = {
       kaminöfen: 3,
       speicheröfen: 6,
-      kachelöfen: 5,
+      kachelöfen: 2,
       heizkamine: 4,
       herde: 5,
       zubehör: 4
