@@ -1237,6 +1237,12 @@ body {
   }
 }
 
+.legal #content .inner {
+  display: block;
+  height: auto;
+  padding-bottom: 200px;
+}
+
 .legal-info {
   h1 {
     font-family: 'Droid Serif', serif;
@@ -1254,12 +1260,17 @@ body {
   }
 
   p {
-    line-height: 21px;
+    line-height: 22px;
     font-size: 15px;
   }
 
   a {
     color: #EF6464;
     text-decoration: none;
+  }
+
+  @media (min-width: 992px) {
+    width: 700px;
+    margin: 0 auto;
   }
 }
