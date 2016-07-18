@@ -8,7 +8,7 @@ const Router = Ember.Router.extend({
 Router.map(function() {
   this.route('products', {
     path: '/produkte'
-  }, function() {
+  }, function () {
     this.route('detail', {
       path: '/:product'
     })
@@ -20,12 +20,16 @@ Router.map(function() {
 
   this.route('service')
 
-  this.route('contact', {
-    path: '/kontakt'
-  })
-
   this.route('partners', {
     path: '/partner'
+  })
+
+  this.route('contact', {
+    path: '/kontakt'
+  }, function () {
+    this.route('legal', {
+      path: '/rechtliches'
+    })
   })
 })
 
