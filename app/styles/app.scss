@@ -1,3 +1,13 @@
+::selection {
+  background: #EC6225;
+  color: #fff;
+}
+
+::-moz-selection {
+  background: #EC6225;
+  color: #fff;
+}
+
 html, body {
   height: 100%;
 }
