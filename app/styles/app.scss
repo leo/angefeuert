@@ -1177,7 +1177,10 @@ body {
     z-index: 200;
     height: auto;
     padding-bottom: 0;
-    width: 435px;
+
+    @media (min-width: 992px) {
+      width: 435px;
+    }
   }
 
   .slick-list {
