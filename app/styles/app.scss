@@ -447,7 +447,7 @@ body {
 
     @media (min-width: 992px) {
       .contact & {
-        position: absolute;
+        position: fixed;
         bottom: 90px;
         right: 0;
         text-transform: none;
