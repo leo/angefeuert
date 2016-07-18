@@ -1282,5 +1282,18 @@ body {
   @media (min-width: 992px) {
     width: 700px;
     margin: 0 auto;
+
+    h1 {
+      font-size: 29px;
+      margin-top: 80px;
+
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+
+    h2 {
+      font-size: 21px;
+    }
   }
 }
