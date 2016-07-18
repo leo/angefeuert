@@ -5,25 +5,13 @@
 <section class="inner">
   <aside class="product-slider">
     {{#slick-slider dots=true arrows=false}}
-      <figure>
-        <img src="/images/slide-one-md.png">
-      </figure>
 
-      <figure>
-        <img src="/images/slide-one-md.png">
-      </figure>
+      {{#each model.slides as |index|}}
+        <figure>
+          <img src="/images/product-slides/{{model.lowercase}}/{{index}}.JPG">
+        </figure>
+      {{/each}}
 
-      <figure>
-        <img src="/images/slide-one-md.png">
-      </figure>
-
-      <figure>
-        <img src="/images/slide-one-md.png">
-      </figure>
-
-      <figure>
-        <img src="/images/slide-one-md.png">
-      </figure>
     {{/slick-slider}}
   </aside>
 
