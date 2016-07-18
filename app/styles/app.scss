@@ -871,6 +871,7 @@ body {
         img {
           transition: transform .4s;
           height: calc(100% - 60px);
+          max-width: 80%;
         }
       }
     }
