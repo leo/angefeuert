@@ -8,10 +8,11 @@
     "test": "tests"
   },
   "scripts": {
-    "build": "ember build",
     "start": "ember serve -w",
     "now-start": "ember serve -prod",
-    "test": "ember test"
+    "now-build": "ember build -prod",
+    "test": "ember test",
+    "install": "bower install"
   },
   "repository": "leo/angefeuert",
   "engines": {
