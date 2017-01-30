@@ -11,4 +11,4 @@ COPY . /usr/src/app
 
 RUN npm run now-build
 EXPOSE 4200
-CMD npm run now-start
+CMD ["npm", "run", "now-start"]
