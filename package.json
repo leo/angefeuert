@@ -12,6 +12,9 @@
   "repository": "leo/angefeuert",
   "author": "leo",
   "license": "MIT",
+  "alias": {
+    "angefeuert.de"
+  },
   "devDependencies": {
     "broccoli-asset-rev": "^2.4.2",
     "ember-body-class": "^0.3.9",
