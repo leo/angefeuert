@@ -1,12 +1,7 @@
 {
   "name": "angefeuert",
-  "version": "0.0.0",
   "description": "Where you buy a fireplace for your home",
   "private": true,
-  "directories": {
-    "doc": "doc",
-    "test": "tests"
-  },
   "scripts": {
     "dev": "ember serve -w",
     "start": "ember serve -prod",
@@ -15,9 +10,6 @@
     "install": "bower install"
   },
   "repository": "leo/angefeuert",
-  "engines": {
-    "node": ">= 0.10.0"
-  },
   "author": "leo",
   "license": "MIT",
   "devDependencies": {
