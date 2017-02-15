@@ -4,10 +4,9 @@
   "private": true,
   "scripts": {
     "dev": "ember serve -w",
-    "now-start": "ember serve -prod",
-    "now-build": "bower install && ember build -prod",
-    "test": "ember test",
-    "install": "bower install"
+    "start": "ember serve -prod",
+    "build": "ember build -prod",
+    "test": "ember test"
   },
   "repository": "leo/angefeuert",
   "author": "leo",
