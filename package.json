@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "ember serve -w",
     "now-start": "ember serve -prod",
-    "now-build": "ember build -prod",
+    "now-build": "bower install && ember build -prod",
     "test": "ember test",
     "install": "bower install"
   },
