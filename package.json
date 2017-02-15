@@ -4,8 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "ember serve -w",
-    "start": "ember serve -prod",
-    "build": "ember build -prod",
+    "now-start": "ember serve -prod",
+    "now-build": "ember build -prod",
     "test": "ember test",
     "install": "bower install"
   },
