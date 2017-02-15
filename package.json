@@ -8,9 +8,9 @@
     "test": "tests"
   },
   "scripts": {
-    "start": "ember serve -w",
-    "now-start": "ember serve -prod",
-    "now-build": "ember build -prod",
+    "dev": "ember serve -w",
+    "start": "ember serve -prod",
+    "build": "ember build -prod",
     "test": "ember test",
     "install": "bower install"
   },
