@@ -12,7 +12,7 @@
   "repository": "leo/angefeuert",
   "author": "leo",
   "license": "MIT",
-  "now": {
+  "now": {
     "alias": "angefeuert.de"
   },
   "devDependencies": {
