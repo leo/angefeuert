@@ -12,8 +12,8 @@
   "repository": "leo/angefeuert",
   "author": "leo",
   "license": "MIT",
-  "alias": {
-    "angefeuert.de"
+  "now": {
+    "alias": "angefeuert.de"
   },
   "devDependencies": {
     "broccoli-asset-rev": "^2.4.2",
