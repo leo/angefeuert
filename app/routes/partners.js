@@ -132,6 +132,13 @@ export default Ember.Route.extend({
           'heizkamine',
           'speicherkamine'
         ]
+      },
+      {
+        name: 'cb-stone',
+        url: 'https://www.cb-stone-tec.de',
+        categories: [
+          'kachelöfen'
+        ]
       }
     ]
   }
