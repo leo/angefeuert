@@ -6,7 +6,8 @@
     "dev": "ember serve -w",
     "start": "ember serve -prod",
     "build": "ember build -prod",
-    "test": "ember test"
+    "test": "ember test",
+    "deploy": "npm run build && rm -rf dist/package.json && now dist -n 'angefeuert'"
   },
   "repository": "leo/angefeuert",
   "author": "leo",
