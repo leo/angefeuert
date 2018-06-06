@@ -1,5 +1,6 @@
 {
   "alias": "angefeuert.de",
+  "type": "static",
   "features": {
     "static": "v2"
   },
