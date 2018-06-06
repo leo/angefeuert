@@ -1,0 +1,13 @@
+{
+  "alias": "angefeuert.de",
+  "features": {
+    "static": "v2"
+  },
+  "static": {
+    "rewrites": [{
+      "source": "**",
+      "destination": "/index.html"
+    }],
+    "public": "dist"
+  }
+}

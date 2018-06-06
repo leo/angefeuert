@@ -6,15 +6,11 @@
     "dev": "ember serve -w",
     "start": "ember serve -prod",
     "build": "ember build -prod",
-    "test": "ember test",
-    "deploy": "npm run build && rm -rf dist/package.json && now dist -n 'angefeuert'"
+    "test": "ember test"
   },
   "repository": "leo/angefeuert",
   "author": "leo",
   "license": "MIT",
-  "now": {
-    "alias": "angefeuert.de"
-  },
   "devDependencies": {
     "broccoli-asset-rev": "2.4.2",
     "ember-body-class": "0.3.9",
