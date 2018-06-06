@@ -585,6 +585,10 @@ body {
       box-sizing: border-box;
     }
 
+    .slick-slide > div {
+      height: 100%;
+    }
+
     .image {
       order: 2;
       padding-bottom: 0;
