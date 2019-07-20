@@ -4,8 +4,8 @@
   "version": "2.0.2",
   "private": true,
   "scripts": {
+    "install": "bower install --allow-root",
     "dev": "ember serve -w",
-    "start": "ember serve -prod",
     "build": "ember build -prod",
     "test": "ember test"
   },
