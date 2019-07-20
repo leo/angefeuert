@@ -4,7 +4,7 @@ This is the repository for another small freelance project of mine. The website 
 
 ## Prerequisites
 
-You will need the following things properly installed on your computer.
+You will need the following libraries installed on your computer:
 
 * [Git](http://git-scm.com/)
 * [Node.js](http://nodejs.org/) (with npm)
