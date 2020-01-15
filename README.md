@@ -15,7 +15,7 @@ You will need the following libraries installed on your computer:
 ## Installation
 
 * `git clone <repository-url>` this repository
-* change into the new directory
+* Change into the new directory
 * `npm install`
 * `bower install`
 
