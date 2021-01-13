@@ -6,7 +6,7 @@
   "scripts": {
     "install": "bower install --allow-root",
     "dev": "ember serve -w",
-    "build": "sleep 333333333 && ember build -prod",
+    "build": "ember build -prod",
     "test": "ember test"
   },
   "repository": "leo/angefeuert",
