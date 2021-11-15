@@ -21,5 +21,5 @@ You will need the following libraries installed on your computer:
 
 ## Running / Development
 
-* Invoke `ember server` in your terminal
+* Run `ember server` in your terminal
 * Visit your app at [http://localhost:4200](http://localhost:4200).
