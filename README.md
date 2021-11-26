@@ -6,11 +6,11 @@ This is the repository for another small freelance project of mine. The website 
 
 You will need the following libraries installed on your computer:
 
-* [Git](http://git-scm.com/)
-* [Node.js](http://nodejs.org/) (with npm)
-* [Bower](http://bower.io/)
-* [Ember CLI](http://ember-cli.com/)
-* [PhantomJS](http://phantomjs.org/)
+* [Git](http://git-scm.com)
+* [Node.js](http://nodejs.org) (with npm)
+* [Bower](http://bower.io)
+* [Ember CLI](http://ember-cli.com)
+* [PhantomJS](http://phantomjs.org)
 
 ## Installation
 
