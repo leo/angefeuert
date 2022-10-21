@@ -13,8 +13,7 @@ module.exports = function (environment) {
       }
     },
     googleFonts: [
-      'Roboto:300,400,500,700',
-      'Droid+Serif:400,700,400italic,700italic'
+      'Roboto:300,400,500,700'
     ],
     APP: {
       // Here you can pass flags/options to your application instance
