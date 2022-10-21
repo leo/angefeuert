@@ -1,6 +1,6 @@
 # angefeuert
 
-This is the repository for another small freelance project of mine. The website aims to provide a quick glance on what my uncle's company is doing (fireplaces) and how one could take advantage of these products in his own home.
+This is the repository for another small freelance project of mine. The website aims to provide a quick glance on what my uncle's company is doing (fireplaces) and how one could take advantage of these products in their own home.
 
 ## Prerequisites
 
